@@ -13,7 +13,6 @@
   <Directory <%= @document_root %>>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride None
-		Order allow,deny
-		allow from all
+		Require all granted
 	</Directory>
 </VirtualHost>
